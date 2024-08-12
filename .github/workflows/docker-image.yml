@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: frang3365/proyecto-python-validacion:latest
+        tags: ${{secrets.DOCKERHUB_USERNAME}}/proyecto-python-validacion:latest
 
     - name: Log out from Docker Hub
       run: docker logout
